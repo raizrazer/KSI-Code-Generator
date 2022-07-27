@@ -4,6 +4,12 @@
 //   console.log('page is fully loaded');
 // };
 
+let calc_btn = document.getElementById("calc");
+  calc_btn.addEventListener("click",()=>{
+    calc();
+    console.log("Calculated");
+  })
+
 function calc() {
   let code = document.getElementById("code");
   let st = code.value.toUpperCase();
