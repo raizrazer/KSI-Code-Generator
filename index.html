@@ -4,11 +4,25 @@
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/styles.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PCNDM7E0TM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PCNDM7E0TM");
+    </script>
   </head>
 
   <body>
     <div class="input-code">
-      <input type="text" class="code" name="code" id="code">
+      <input type="text" class="code" name="code" id="code" />
       <button type="submit" onclick="calc()">Calculate</button>
     </div>
     <div id="app"></div>
