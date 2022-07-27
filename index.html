@@ -13,19 +13,8 @@
     />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-PCNDM7E0TM"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-PCNDM7E0TM");
-    </script>
+    <script async src="/googletag.js"></script>
+    <script src="/tagrun.js"></script>
   </head>
 
   <body id="main-center" class="main-center">
@@ -79,10 +68,14 @@
         Bookmark the page for later use when JJ uploads.
       </p>
     </div>
+    
     <div id="app"></div>
     <!-- <table id="table"></table> -->
     <div id="table"></div>
-
+    <div class="footer" style="display: flex; align-items: center">
+      <p>Source code:</p>
+      <a href="https://github.com/raizrazer/KSI-Code-Generator" target="_blank" rel="noopener noreferrer"><img style="width: 100px" src="/github.png" alt="goto github repo" /></a>
+    </div>
     <script src="/index.js"></script>
   </body>
 </html>
