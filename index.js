@@ -11,6 +11,8 @@ let calc_btn = document.getElementById("calc");
   })
 
 function calc() {
+  let body = document.getElementById("main-center");
+  body.classList.remove("main-center")
   let howto = document.getElementById("howto");
   howto.classList.add("hide");
   let code = document.getElementById("code");
