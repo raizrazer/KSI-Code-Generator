@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 body {
   background-color: rgb(32, 32, 32);
@@ -16,8 +17,9 @@ body {
   justify-content: center;
   padding: 20px 0px;
   display: flex;
-  height: 120px;
-  width: 500px;
+  height: 100px;
+  min-width: 600px;
+  width: fit-content;
 }
 
 .code{
@@ -43,6 +45,8 @@ button{
   color:white;
   border: none;
   background-color: rgb(16, 125, 214);
+  display: flex;
+  align-items: center;
 }
 button:hover{
   background-color: rgb(17, 94, 156);
@@ -85,10 +89,28 @@ td:active {
   cursor: grabbing;
 } */
 
+.main_title{
+  display: flex;
+  font-size: 20px;
+  font-weight:bold;
+  padding:20px;
+  text-align: center;
+}
+.howto{
+  padding: 20px;
+}
+.howto #details{
+  font-style: italic;
+}
+
 [done = "true"] {
   background-color: #1361a0;
 }
 
 [done = "false"] {
   background-color: #12a059;
+}
+
+.hide{
+  display: none;
 }

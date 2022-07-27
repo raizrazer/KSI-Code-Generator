@@ -11,6 +11,8 @@ let calc_btn = document.getElementById("calc");
   })
 
 function calc() {
+  let howto = document.getElementById("howto");
+  howto.classList.add("hide");
   let code = document.getElementById("code");
   let st = code.value.toUpperCase();
   console.log(st);
