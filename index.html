@@ -20,8 +20,14 @@
   <body id="main-center" class="main-center">
     <div class="main_title">KSI Gift Card Completer/Generator 🤖</div>
     <div class="input-code">
-      <input type="text" class="code" name="code" id="code" />
-      <button id="calc" type="submit">Generate🪄</button>
+      <div class="first-part">
+        <input type="text" class="code" name="code" id="code" />
+        <button id="calc" type="submit">Generate🪄</button>
+      </div>
+      <div style="padding-top: 20px; display: flex; align-items: center">
+        <input type="checkbox" name="one-or-two" id="one-or-two" />
+        <label for="one-or-two">Single</label>
+      </div>
     </div>
     <div class="howto" id="howto">
       <h2 id="title">How to!</h2>
@@ -68,13 +74,18 @@
         Bookmark the page for later use when JJ uploads.
       </p>
     </div>
-    
+
     <div id="app"></div>
     <!-- <table id="table"></table> -->
     <div id="table"></div>
     <div class="footer" style="display: flex; align-items: center">
       <p>Source code:</p>
-      <a href="https://github.com/raizrazer/KSI-Code-Generator" target="_blank" rel="noopener noreferrer"><img style="width: 100px" src="/github.png" alt="goto github repo" /></a>
+      <a
+        href="https://github.com/raizrazer/KSI-Code-Generator"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img style="width: 100px" src="/github.png" alt="goto github repo"
+      /></a>
     </div>
     <script src="/index.js"></script>
   </body>
